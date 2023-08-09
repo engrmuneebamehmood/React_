@@ -15,7 +15,7 @@ function Mystate() {
     return (
         <div className="mystate-container">
             <h1> Tasbeeh Counter</h1>
-            
+         
             <h1> {data}</h1>
             
             <div className="button-container"> {/* Use the new button-container class */}

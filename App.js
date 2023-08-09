@@ -1,21 +1,24 @@
-import './styles.css';
-import React, { useState } from "react";
-import Field from "./components/field";
-import Translate from "./components/translate";
-import Languages from "./components/languages";
 
-export default function App() {
-  const[language,setLanguage]=useState('es');
-  const[text,setText]=useState('');
+//it is just a project , named app
+//WE HAVE RESUED OUR INTERN COMPONENT HERE, SO IF WE USE ONLY THE NAME OF APP FUNCTION IN INDEX.JS, BOTH WILL WORK
 
-    return (
-    <div>
+import logo from './logo.svg';
+import './App.css';
+import Intern from  './Intern';
+import Classcomponent from './Classcomponent';
+import Mystate from './Mystate';
 
-    <Field onChange ={setText}/>
-    <Languages  language={language} onLanguageChange ={setLanguage}/>
-    <hr />
-    <Translate  text={text} language={language}/>
+function App() {
+  let name="Muneeba Mehmood"
+  let skill="React js"
+  return (
+    <div className="App">
+      <h1> Hello, my name is {name} and my skill is {skill}</h1>
+      <h2> The time is : {new Date().toLocaleTimeString()}</h2>
 
+      <Intern />
     </div>
   );
 }
+
+export default App;
