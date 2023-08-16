@@ -1,0 +1,23 @@
+import { useState } from "react";
+function Arraydestructuring()
+{
+    function makeArray()
+    {
+        return[1,10,30,50];
+    }
+
+const myarray=makeArray();
+const first= myarray[0];//return first value on index 0 
+const second=myarray[1];
+
+
+//const[first,second]=makeArray();
+
+console.log(second);
+
+}
+
+export default Arraydestructuring;
+
+
+
