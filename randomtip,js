@@ -1,0 +1,59 @@
+
+
+import React,{useState} from 'react';
+
+import './App.css';
+
+
+
+function getRandomTip()
+{
+  const tip=['eat','play','code','pray','read'];
+  return tip[Math.floor(Math.random()*tip.length)]
+}
+
+
+function App() {
+ 
+  const[tip,settips]=useState([]);
+
+  const handleClick = () => {
+
+//creating a random array
+// take all the existing elements out of our array of tips and put them into the new one
+//And then on the very end, we're going to put in a new random tips as well.
+
+   setAnimals([getRandomtip()]);
+  
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Add tip</button>
+     <div>{tip}</div>
+    </div>
+  );
+}
+
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
